@@ -1,9 +1,10 @@
 import random
 from indexes import characters
-
 def main():
-    for i in range(0, 36):
+    letter = ""
+    for i in range(1):
         i = random.choice(characters)
-        print(i)
-if __name__ == '__name__':
+        letter += i + letter
+        print(letter)
+if __name__ == '__main__':
     main()
