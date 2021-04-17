@@ -1,6 +1,6 @@
 def Length():
     user = int(input("Length: "))
-    len = None
+    len = ""
     if user >= 8:
         len += len(len)
         StopIteration

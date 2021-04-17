@@ -1,13 +1,14 @@
-import random
+
 from indexes import characters
 from indexes import symbols
 from length import Length
-from rand import rand
+from rand import Rand
 
 
 def main():
     Length()
-    rand()
+    Rand()
+    print()
 
 
 if __name__ == '__main__':
