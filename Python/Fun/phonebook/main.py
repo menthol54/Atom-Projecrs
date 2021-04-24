@@ -8,11 +8,10 @@ user_input = input('''>> Welcome to your phonebook
 contact = user_input
 #Fuction one creates a contact
 
-def one():
+def create():
     if contact == '1':
         name = input('Name: ')
         num = input('Number: ')
         person = {}
         person.update({name: num})
         print(person)
-one()
