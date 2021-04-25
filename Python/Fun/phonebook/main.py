@@ -7,18 +7,21 @@ user_input = input('''>> Welcome to your phonebook
 >> What would you like to do: ''')
 contact = user_input
 global person
-person = {}
+person = []
 # Fuction one creates a contact
-
-
 def create():
     if contact == '1':
         name = input('Name: ')
-        num = input('Number: ')
-        person.update({name: num})
+        num = int(input('Number: '))
+
+        person.append(name + ':' + num)
         print(person)
 create()
-
+#create a function to edit
 def edit():
     if contact == '2':
         pass
+def view():
+    if contact == '3':
+        print(person)
+view()
