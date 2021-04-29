@@ -19,17 +19,16 @@ def create():
         f = open(f'contacts\ {name}.txt', 'a')
         f.write(str(person))
         f.close()
-
-
-        file = open('contacts.txt', 'a')
-        file.write(str(person))
-        file.close()
 create()
 
 def view():
     if contact == '2':
         name = input("Name: ")
-        f = open(f'contacts {name}', 'r')
-        print(f.read())
-    else: print('I was unable to find it.')
+        fi = open(f'contacts\ {name}.txt', 'r')
+        print(fi.read())
+        fi.close()
+
 view()
+
+
+def delete():
