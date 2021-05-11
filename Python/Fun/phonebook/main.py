@@ -16,7 +16,7 @@ def create():
         person.update({name : num})
         print(person)
 
-        f = open(f'contacts\ {name}.txt', 'a')
+        f = open(f'{name}.txt', 'a')
         f.write(str(person))
         f.close()
 create()
@@ -24,11 +24,11 @@ create()
 def view():
     if contact == '2':
         name = input("Name: ")
-        fi = open(f'contacts\ {name}.txt', 'r')
-        print(fi.read())
-        fi.close()
+        f = open(f'{name}.txt', 'r')
+        print(f.read())
+        f.close()
 
 view()
 
 
-def delete():
+#def delete():
